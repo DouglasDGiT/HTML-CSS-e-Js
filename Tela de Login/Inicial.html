@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>e-stacionamento</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>LOGIN</header>
+      
+     <form  method="POST" action="/estacionamento/Perfil">
+		 
+        <input type="text" id="email" placeholder="Email" name="email">
+        
+        <input type="password"  id="senha" placeholder="Senha" name="senha">
+      
+    <input type="submit"   class="button" value="Entrar">
+    
+
+      </form>
+      <div class="signup">
+        <span class="signup">Não tem uma conta?
+         <!--<label for="check">Criar conta</label><!-->
+          <form action="/estacionamento/cliente" method="get">
+        <input type="submit"  class="button"  value="Fazer Cadastro" >
+        </form>
+      </div>
+      
+       <div class="signup">
+        <span class="signup">Venha trabalhar conosco
+        <form action="/estacionamento/dono" method="get">
+                <input type="submit"  class="button" value="Ser Parceiro" >
+        </form>
+      </div>
+    </div>
+    
+    
+    </div>
+  </div>
+</body>
+</html>
